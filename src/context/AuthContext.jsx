@@ -38,7 +38,7 @@ export function AuthProvider({ children }) {
     setUser(null);
     setStatus('unauthenticated');
     // Cegah user kembali ke dashboard hanya dengan tombol Back browser
-    window.history.pushState(null, '', '/login');
+    window.location.hash = '#/login';
   }, []);
 
   return (
