@@ -34,7 +34,7 @@ jobs:
 
       - name: Build Financia
         env:
-          VITE_API_BASE_URL: https://script.google.com/macros/s/AKfycbwDSbxC1yH1K7NyGQZOz4ywuffpo1fHQ6cMSwmuMBceBUIdahSMh9ezNGEsQkaA_lf2/exec
+          VITE_API_BASE_URL: https://script.google.com/macros/s/AKfycbwhYtSbdUrUULq8TMVGFOq73msBP10QrqPzEgRdalmRYSMP_znfO4YP3ibuXcJpGLYA/exec
           VITE_APP_NAME: Financia
         run: npm run build
 
