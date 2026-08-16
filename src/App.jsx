@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext';
 import { AppProvider } from './context/AppContext';
 import ToastContainer from './components/ui/Toast';
@@ -25,7 +25,7 @@ export default function App() {
   return (
     <AppProvider>
       <AuthProvider>
-        <BrowserRouter>
+        <HashRouter>
           <ToastContainer />
           <Routes>
             <Route path="/login" element={<Login />} />
@@ -55,7 +55,7 @@ export default function App() {
 
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AuthProvider>
     </AppProvider>
   );
